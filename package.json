@@ -2,12 +2,16 @@
   "name": "2-bharat-clock",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://vikash-kherwa.github.io/bharat-clock-app",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
+
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
